@@ -43,9 +43,9 @@ namespace TicketSite.Controllers
 
             foreach (var v in db.Venues)
             {
-                items.Add(new SelectListItem { Text = v.Venue_Name, Value = v.Venue_Location });
+                items.Add(new SelectListItem { Text = v.Venue_Name, Value = v.Venue_Name });
             }
-            ViewData["VenueName"] = items;
+            ViewBag.VenueName = items;
             return View();
         }
 
