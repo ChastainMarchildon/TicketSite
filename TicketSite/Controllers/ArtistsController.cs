@@ -126,8 +126,8 @@ namespace TicketSite.Controllers
         public ActionResult Shows(int id)
         {
             
-            Venue venue = db.Venues.Find(id);
-            return View(venue);
+            Show show = db.Shows.Find(id);
+            return View(show);
         }
     }
 }

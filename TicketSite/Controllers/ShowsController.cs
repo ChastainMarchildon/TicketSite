@@ -38,7 +38,8 @@ namespace TicketSite.Controllers
         // GET: Shows/Create
         public ActionResult Create()
         {
-            //creates a dropdown menu for venue name when creating a show
+            //creates a dropdown menu for venue name when creating a show by looping through the venue table and populating the names
+            //ViewBag stores all the names, a name selected in the View is passed and stored in a new record
             List<SelectListItem> items = new List<SelectListItem>();
 
             foreach (var v in db.Venues)

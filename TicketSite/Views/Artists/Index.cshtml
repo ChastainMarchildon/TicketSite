@@ -4,10 +4,10 @@
     ViewBag.Title = "Artists";
 }
 
-<h2>Index</h2>
+<h2>Artists</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add an Artist", "Create")
 </p>
 <table class="table">
     <tr>
@@ -23,9 +23,7 @@
             @Html.DisplayFor(modelItem => item.Artist_Name)
            
         </td>
-        <td>
-            @Html.ActionLink("Artists", "Shows", new { id=item.ArtistID }) 
-        </td>
+      
     </tr>
 }
 

@@ -4,24 +4,19 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>All Venues</h2>
 
 <p>
-    @Html.ActionLink("Add a Show", "Create")
+    @Html.ActionLink("Add a Venue", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Venue_Name)
+            @Html.DisplayName("Venue Name")
         </th>
+     
         <th>
-            @Html.DisplayNameFor(model => model.Artist_Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Tickets)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Venue_Location)
+            @Html.DisplayName("Venue Location")
         </th>
         <th></th>
     </tr>
@@ -31,12 +26,7 @@
         <td>
             @Html.DisplayFor(modelItem => show.Venue_Name)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => show.Artist_Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => show.Tickets)
-        </td>
+      
         <td>
             @Html.DisplayFor(modelItem => show.Venue_Location)
         </td>
