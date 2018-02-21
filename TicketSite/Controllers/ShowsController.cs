@@ -38,6 +38,14 @@ namespace TicketSite.Controllers
         // GET: Shows/Create
         public ActionResult Create()
         {
+            //creates a dropdown menu for venue name when creating a show
+            List<SelectListItem> items = new List<SelectListItem>();
+
+            foreach (var v in db.Venues)
+            {
+                items.Add(new SelectListItem { Text = v.Venue_Name, Value = v.Venue_Location });
+            }
+            ViewData["VenueName"] = items;
             return View();
         }
 
@@ -54,13 +62,7 @@ namespace TicketSite.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
-            Venue ven = new Venue();
-            IEnumerable<SelectListItem> item = ven.Venue_Name.Select(c => new SelectListItem
-            {
-                Text = ven.Venue_Name
-            });
-            ViewBag.Venue_Name = item;
+           
             return View(show);
         }
 
