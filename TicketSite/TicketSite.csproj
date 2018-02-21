@@ -195,6 +195,7 @@
     <Compile Include="Controllers\ArtistsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ShowsController.cs" />
     <Compile Include="Controllers\VenuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -203,6 +204,7 @@
     <Compile Include="Models\Artist.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Show.cs" />
     <Compile Include="Models\ShowsModel.cs" />
     <Compile Include="Models\Venue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -276,6 +278,11 @@
     <Content Include="Views\Venues\Edit.cshtml" />
     <Content Include="Views\Venues\Index.cshtml" />
     <Content Include="Views\Artists\Shows.cshtml" />
+    <Content Include="Views\Shows\Create.cshtml" />
+    <Content Include="Views\Shows\Delete.cshtml" />
+    <Content Include="Views\Shows\Details.cshtml" />
+    <Content Include="Views\Shows\Edit.cshtml" />
+    <Content Include="Views\Shows\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

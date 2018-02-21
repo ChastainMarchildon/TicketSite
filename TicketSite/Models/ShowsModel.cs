@@ -18,5 +18,7 @@ namespace TicketSite.Models
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
         }
+
+        public System.Data.Entity.DbSet<TicketSite.Models.Show> Shows { get; set; }
     }
 }
