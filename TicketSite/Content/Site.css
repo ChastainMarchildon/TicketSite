@@ -22,3 +22,30 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.navbar{
+    background-color:crimson;
+}
+
+body{
+    background-color:azure;
+}
+li{
+   color:black;
+}
+#concert{
+    background-color:#ffd3e5;
+    padding:10px;
+    border-radius:5px;
+}
+#desc{
+    font-size:32px;
+    padding:5px;
+}
+.nav .navbar-nav li{
+    color:black;
+}
+.jumbotron{
+    background-color:#ffd3e5;
+}
+

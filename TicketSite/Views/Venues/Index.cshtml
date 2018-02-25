@@ -26,15 +26,19 @@
         <td>
             @Html.DisplayFor(modelItem => show.Venue_Name)
         </td>
-      
+
         <td>
             @Html.DisplayFor(modelItem => show.Venue_Location)
         </td>
+        
         <td>
-            
-            @Html.ActionLink("Details", "Details", new { id=show.VenueID }) 
-            
+            @Html.ActionLink("Edit", "Edit", new { id = show.VenueID }) |
+            @Html.ActionLink("Details", "Details", new { id = show.VenueID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = show.VenueID })
         </td>
+       
+
+       
     </tr>
 }
 
