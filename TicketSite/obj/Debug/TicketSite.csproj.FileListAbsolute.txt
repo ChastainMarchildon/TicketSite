@@ -65,7 +65,6 @@ C:\Users\Owner\source\repos\TicketSite\TicketSite\bin\Microsoft.AI.DependencyCol
 C:\Users\Owner\source\repos\TicketSite\TicketSite\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\Owner\source\repos\TicketSite\TicketSite\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\Owner\source\repos\TicketSite\TicketSite\bin\Microsoft.AI.Web.xml
-C:\Users\Owner\source\repos\TicketSite\TicketSite\obj\Debug\TicketSite.csprojResolveAssemblyReference.cache
 C:\Users\Owner\source\repos\TicketSite\TicketSite\obj\Debug\TicketSite.csproj.CoreCompileInputs.cache
 C:\Users\Owner\source\repos\TicketSite\TicketSite\obj\Debug\TicketSite.dll
 C:\Users\Owner\source\repos\TicketSite\TicketSite\obj\Debug\TicketSite.pdb

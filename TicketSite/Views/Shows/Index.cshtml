@@ -36,9 +36,13 @@
             @Html.DisplayFor(modelItem => item.Artist_Name)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ShowID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ShowID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ShowID })
+            @Html.ActionLink("Details", "Details", new { id = item.ShowID }) |
+
+            @if (User.Identity.IsAuthenticated)
+            { 
+            @Html.ActionLink("Edit", "Edit", new { id = item.ShowID })
+            @Html.ActionLink("Delete", "Delete", new { id = item.ShowID })
+            }
         </td>
     </tr>
 }

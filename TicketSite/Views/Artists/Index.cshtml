@@ -24,9 +24,12 @@
 
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.ArtistID }) |
-            @Html.ActionLink("Details", "Details", new { id = item.ArtistID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ArtistID }) 
+            
+            @if (User.Identity.IsAuthenticated) { 
+            @Html.ActionLink("Edit", "Edit", new { id = item.ArtistID }) 
             @Html.ActionLink("Delete", "Delete", new { id = item.ArtistID })
+            }
         </td>
 
     </tr>

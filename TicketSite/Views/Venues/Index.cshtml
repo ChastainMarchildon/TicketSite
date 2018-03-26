@@ -32,9 +32,12 @@
         </td>
         
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id = show.VenueID }) |
-            @Html.ActionLink("Details", "Details", new { id = show.VenueID }) |
+            @Html.ActionLink("Details", "Details", new { id = show.VenueID }) 
+            
+            @if (User.Identity.IsAuthenticated) { 
+            @Html.ActionLink("Edit", "Edit", new { id = show.VenueID }) 
             @Html.ActionLink("Delete", "Delete", new { id = show.VenueID })
+            }
         </td>
        
 
