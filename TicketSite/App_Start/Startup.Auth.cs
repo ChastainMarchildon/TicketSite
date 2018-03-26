@@ -46,9 +46,9 @@ namespace TicketSite
             app.UseTwoFactorRememberBrowserCookie(DefaultAuthenticationTypes.TwoFactorRememberBrowserCookie);
 
             // Uncomment the following lines to enable logging in with third party login providers
-            //app.UseMicrosoftAccountAuthentication(
-            //    clientId: "",
-            //    clientSecret: "");
+            app.UseMicrosoftAccountAuthentication(
+                clientId: "72a4ab45-2097-4a92-a72f-adddc1798397",
+                clientSecret: "ligvWJ146])?#yxzJNDSD11");
 
             //app.UseTwitterAuthentication(
             //   consumerKey: "",
@@ -58,11 +58,11 @@ namespace TicketSite
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "331332874630-ln8r2rtlhmjo6bvvpc0408fhum8bhr1g.apps.googleusercontent.com",
+                ClientSecret = "px7WFnJFslXZWdY6164WfDyu"
+            });
         }
     }
 }
