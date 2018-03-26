@@ -36,6 +36,7 @@ namespace TicketSite.Controllers
         }
 
         // GET: Artists/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -44,6 +45,7 @@ namespace TicketSite.Controllers
         // POST: Artists/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ArtistID,Artist_Name")] Artist artist)
@@ -59,6 +61,7 @@ namespace TicketSite.Controllers
         }
 
         // GET: Artists/Edit/5
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -76,6 +79,7 @@ namespace TicketSite.Controllers
         // POST: Artists/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ArtistID,Artist_Name")] Artist artist)
@@ -90,6 +94,7 @@ namespace TicketSite.Controllers
         }
 
         // GET: Artists/Delete/5
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)

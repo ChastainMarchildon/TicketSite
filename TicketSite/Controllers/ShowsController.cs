@@ -36,6 +36,7 @@ namespace TicketSite.Controllers
         }
 
         // GET: Shows/Create
+        [Authorize]
         public ActionResult Create()
         {
             //creates a dropdown menu for venue name when creating a show by looping through the venue table and populating the names
@@ -55,6 +56,7 @@ namespace TicketSite.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize]
         public ActionResult Create([Bind(Include = "ShowID,Venue_Name,Tickets,Artist_Name")] Show show)
         {
             if (ModelState.IsValid)
@@ -68,6 +70,7 @@ namespace TicketSite.Controllers
         }
 
         // GET: Shows/Edit/5
+        [Authorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -85,6 +88,7 @@ namespace TicketSite.Controllers
         // POST: Shows/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ShowID,Venue_Name,Tickets,Artist_Name")] Show show)
@@ -99,6 +103,7 @@ namespace TicketSite.Controllers
         }
 
         // GET: Shows/Delete/5
+        [Authorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)

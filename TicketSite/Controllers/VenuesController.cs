@@ -36,6 +36,7 @@ namespace TicketSite.Controllers
         }
 
         // GET: Venues/Create
+        [Authorize]
         public ActionResult Create()
         {
             return View();
@@ -44,6 +45,7 @@ namespace TicketSite.Controllers
         // POST: Venues/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "VenueID,Venue_Name,Venue_Location,Tickets,Artist_Name")] Venue venue)
@@ -57,7 +59,7 @@ namespace TicketSite.Controllers
 
             return View(venue);
         }
-
+        [Authorize]
         // GET: Venues/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -76,6 +78,7 @@ namespace TicketSite.Controllers
         // POST: Venues/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "VenueID,Venue_Name,Venue_Location,Tickets,Artist_Name")] Venue venue)
@@ -88,7 +91,7 @@ namespace TicketSite.Controllers
             }
             return View(venue);
         }
-
+        [Authorize]
         // GET: Venues/Delete/5
         public ActionResult Delete(int? id)
         {
